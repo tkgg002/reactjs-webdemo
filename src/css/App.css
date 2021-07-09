@@ -1,0 +1,43 @@
+.App {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color:white;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.spinner {
+  width: 70vh;
+  position: absolute;
+  left:32%;
+  top:26%;
+}
+
+.landingPage {
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  width:100vw;
+}
+
+.riskAssessmentPage {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  width:100vw;
+  flex-wrap: wrap;
+}
+
+.riskAssessment > #overviewText, .riskAssessment > .riskAssessmentTable, .riskAssessment > button {
+  margin-left:40px;
+  margin-right:40px;
+}
+
+.firstRow {
+  width:100vw;
+}
+
+.secondRow {
+  display: flex;
+}

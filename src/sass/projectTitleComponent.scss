@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+.navbar {
+  width:100%;
+  max-height:3.25rem;
+  margin-bottom: 5vh;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.185);
+  display: flex;
+  align-items: center;
+  z-index: auto !important;
+}
+
+// Removes search bar when screen isn't wide enough
+@media screen and (max-width:1023px) {
+  #navbarBasicExample > .navbar-end > .navbar-item >.buttons > .searchbar-container {
+    display: none;
+  }    
+  #navbarBasicExample {
+    bottom: 5px;
+  }    
+}
+
+#navbarBasicExample {
+  display: flex;
+  box-shadow: none;
+  padding: 0;
+}
+
+.navbar-start {
+  display: none;
+}
+
+#dropdown-trigger-list {
+  width:190px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#dropdown-shown {
+  padding-right: 6px;
+}
+
+#dropdown-item {
+  padding: 6px;
+}
+
+#arrowIcon {
+  margin-left:1vh;
+}
+
+.navbar-end {
+  border-left: 1px solid rgba(134, 134, 134, 0.185);
+}
+
+.riskAssessment > nav.navbar > div.navbar-brand.column.is-3 {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 0 0 40px;
+  border: none;
+}
+
+a.navbar-item {
+  padding: 0 0 0 0;
+}
+
+.translationComponent {
+  padding-left: 1vh;
+}
+
+.projectTitle {
+  color: #272B4A;
+  font-size:2rem;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+
+.searchbar-container {
+  display: flex;
+  margin: 0 30px 8px 5px;
+
+  align-items: center;
+  border: 1px solid #dbdbdb;
+  border-radius:4px;
+}
+
+input.input, input.input:focus {
+  border-color: white;
+  border-width: 0;
+  box-shadow: inset 0 0 0 0;
+  height:38px;
+  // outline: none;
+}
+
+.button.button.is-white {
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 38px;
+}
+
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/components/navbar.sass";
+@import "../../node_modules/bulma/sass/components/dropdown.sass";
+@import "../../node_modules/bulma/sass/elements/icon.sass";

@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+$title-color: #272B4A;
+
+#overviewText {
+  margin: 70px 0 10px 0;
+  padding: 0 0 0 10px;
+}
+
+.table {
+  display: flex !important;
+  flex-direction: column;
+
+  max-height:67vh;
+  overflow: auto;
+  width: 100%;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.185);
+  align-items: center;
+}
+
+thead, tbody {
+  width: 100%;
+}
+
+.fas.fa-sort-up, .fas.fa-sort-down {
+  padding-left: 4px;
+}
+
+.fas.fa-sort-up {
+  position: relative;
+  top:4px;
+}
+
+.table-checkbox, .large-table-checkbox{
+  width: 2em;
+  margin-left: 35px;
+}
+
+td.large-table-checkbox {
+  padding-top: 1.2em !important;
+}
+
+.table-type, .large-table-type {
+  width: 5em;
+}
+
+td.large-table-type {
+  padding-right: 0px !important;
+  padding-left: 20px !important;
+}
+
+td.table-type > i.fa-2x {
+  padding-top: 0.25em !important;
+}
+
+i.fas.fa-sync, i.fas.fa-exclamation-circle, i.fas.fa-dollar-sign {
+  padding-left:0.8em;
+  padding-right:1em;
+}
+
+i.fas.fa-sync.fa-2x, i.fas.fa-exclamation-circle.fa-2x {
+  padding-left:0;
+  padding-top:8px;
+}
+
+i.fas.fa-dollar-sign.fa-2x {
+  padding-left:0.2em;
+}
+
+i {
+  // padding-left:7px;
+  color:#272B4A;
+}
+
+.table-name, .large-table-name {
+  width:78vw;
+}
+
+td.large-table-name {
+  padding-left: 0;
+}
+
+.table-status, .large-table-status {
+  width: 7em;
+  font-size: 0.9rem;
+}
+
+td.large-table-status {
+  padding-top:1.4em !important;
+}
+
+.table-status-waiting > i {
+  color:#E9E7E1;
+}
+
+.table-status-active > i {
+  color:#FEC77C;
+}
+
+.table-display, .large-table-display {
+  width:2vw;
+}
+
+th.large-table-display {
+  visibility: hidden;
+  width:23px;
+}
+
+td.large-table-display {
+  padding-top: 1.3em !important;
+  cursor: pointer;
+}
+
+a {
+  color: #4c4c4c !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3d3d3d !important;
+}
+
+
+.table-name-description {
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.table-name-details {
+  opacity: 0.7;
+}
+
+// Scrollbar customization
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f1f1f1;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgba(58, 58, 58, 0.384);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(58, 58, 58, 0.63);
+}
+
+@import "../../node_modules/bulma/sass/utilities/_all.sass";
+@import "../../node_modules/bulma/sass/elements/table.sass";

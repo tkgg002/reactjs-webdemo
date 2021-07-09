@@ -1,0 +1,60 @@
+.popup-popup-modal {
+  font-size: 12px;
+}
+.popup-content{
+  width: 30%;
+}
+.popup-modal > .header {
+  width: 100%;
+  font-size: 18px;
+  text-align: left;
+  padding: 20px 0px 0px 20px;
+  color: #4863a3;
+  font-weight: bold;
+}
+.popup-modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 0px;
+}
+.popup-modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.popup-modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: 15px;
+  top: 20px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 0px;
+  color: #4863a3;
+}
+.popup-modal-new-project form{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.popup-modal-new-project input{
+  border: 0px;
+  background: #f4f5f5;
+  color: #4863a3;
+  padding: 10px;
+  width: 100%;
+}
+.popup-modal-new-project .actions button{
+  margin: 0px 15px 15px 0px;
+  float: right;
+  border: 0px;
+  border-radius: 0px;
+  background: #4863a3;
+}
+.popup-overlay {
+  background: rgb(72 99 163 / 50%);
+}

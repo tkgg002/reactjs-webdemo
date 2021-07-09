@@ -1,0 +1,56 @@
+{
+  "language": "Velg språk",
+  "anbudsunderlag": "Anbudsunderlagssjekker",
+  
+  "accesspage": {
+    "access": "Tilgang",
+    "login": "Logg inn",
+    "epost": "E-post",
+    "password": "Passord"
+  },
+  
+  "landingpage": {
+    "newproject": "Nytt prosjekt",
+    "recent": "Nylige",
+    "projecttitle": "Prosjekttittel"
+  },
+  
+  "createproject": {
+    "newproject": "Nytt prosjekt",
+    "newprojectplaceholder": "Prosjekt uten tittel",
+    "dropfiles": "Slipp filer her",
+    "uploadfiles": "Last opp filer",
+    "overview": "Oversikt",
+    "type": "Type",
+    "name": "Navn",
+    "remove": "Fjern",
+    "cancel": "Avbryt",
+    "createproject": "Opprett prosjekt"
+  },
+
+  "riskassessment": {
+    "has": "har ",
+    "conflicts": " antall konflikter med",
+    "searchdocuments": "Søk i dokumenter",
+    "largelist": "Stor liste",
+    "list": "Liste",
+    "status": "Status",
+    "states": {
+      "active": "Aktiv",
+      "waiting": "Venter"
+    },
+    "rejectconflict": "Avvis konflikt",
+    "exportlist": "Eksporter liste",
+    "doubletreatment": "Dobbeltbehandling",
+    "disagreement": "Uoverensstemmelse",
+    "costlysolution": "Kostbar løsning",
+    "details": "Detaljer"
+  },
+
+  "reportingsystem": {
+    "description": "Beskrivelse",
+    "forward": "Videresend",
+    "message": "Melding",
+    "send": "Send"
+  }
+}

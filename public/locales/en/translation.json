@@ -1,0 +1,56 @@
+{
+  "language": "Select language",
+  "anbudsunderlag": "Tender documentation",
+
+  "accesspage": {
+    "access": "Access",
+    "login": "Log in",
+    "epost": "E-mail",
+    "password": "Password"
+  },
+  
+  "landingpage": {
+    "newproject": "New project",
+    "recent": "Recent",
+    "projecttitle": "Project title"
+  },
+  
+  "createproject": {
+    "newproject": "New project",
+    "newprojectplaceholder": "Untitled project",
+    "dropfiles": "Drop files here",
+    "uploadfiles": "Upload files",
+    "overview": "Overview",
+    "type": "Type",
+    "name": "Name",
+    "remove": "Remove",
+    "cancel": "Cancel",
+    "createproject": "Create project"
+  },
+
+  "riskassessment": {
+    "has": "has ",
+    "conflicts": " amount of conflicts with",
+    "searchdocuments": "Search documents",
+    "largelist": "Large list",
+    "list": "List",
+    "status": "Status",
+    "states": {
+      "active": "Active",
+      "waiting": "Waiting"
+    },
+    "rejectconflict": "Reject conflict",
+    "exportlist": "Export list",
+    "doubletreatment": "Double treatment",
+    "disagreement": "Disagreement",
+    "costlysolution": "Costly solution",
+    "details": "Details"
+  },
+
+  "reportingsystem": {
+    "description": "Description",
+    "forward": "Forward",
+    "message": "Message",
+    "send": "Send"
+  }
+}
