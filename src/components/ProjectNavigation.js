@@ -16,7 +16,32 @@ function ProjectNavigation() {
   const { t } = useTranslation();
   const [newProjectOpen, setNewProjectOpen] = useState(false);
   const closeNewProjectOpenModal = () => setNewProjectOpen(false);
-
+  const subNavData = {
+    projectRecent: [
+      {
+        title: t('landingpage.projecttitle'),
+        itemId: '/riskassessment/largelist',
+      },
+      {
+        title: t('landingpage.projecttitle'),
+        itemId: '/placeholder1',
+      },
+      {
+        title: t('landingpage.projecttitle'),
+        itemId: '/placeholder2',
+      },
+      {
+        title: t('landingpage.projecttitle'),
+        itemId: '/placeholder3',
+      },
+    ],
+    projectRecent1: [
+      {
+        title: t('landingpage.projecttitle'),
+        itemId: '/riskassessment/largelist',
+      },
+    ],
+  };
   return (
     <div className="wrapper">
 
@@ -50,25 +75,7 @@ function ProjectNavigation() {
               title: t('landingpage.recent'),
               itemId: '/',
               elemBefore: () => <i className="far fa-clock" />,
-              subNav: [
-                // TODO: Make this process dynamic
-                {
-                  title: t('landingpage.projecttitle'),
-                  itemId: '/riskassessment/largelist',
-                },
-                {
-                  title: t('landingpage.projecttitle'),
-                  itemId: '/placeholder1',
-                },
-                {
-                  title: t('landingpage.projecttitle'),
-                  itemId: '/placeholder2',
-                },
-                {
-                  title: t('landingpage.projecttitle'),
-                  itemId: '/placeholder3',
-                },
-              ],
+              subNav: subNavData.projectRecent1,
             },
           ]}
         />

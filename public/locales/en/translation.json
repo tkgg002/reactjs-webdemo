@@ -11,6 +11,7 @@
   
   "landingpage": {
     "newproject": "New project",
+    "projectexistence": "Project existence",
     "recent": "Recent",
     "projecttitle": "Project title"
   },

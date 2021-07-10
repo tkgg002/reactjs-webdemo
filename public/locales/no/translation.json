@@ -10,7 +10,8 @@
   },
   
   "landingpage": {
-    "newproject": "Nytt prosjekt",
+    "newproject": "Nytt prosjekt",    
+    "projectexistence": "Prosjekt eksistens",
     "recent": "Nylige",
     "projecttitle": "Prosjekttittel"
   },
