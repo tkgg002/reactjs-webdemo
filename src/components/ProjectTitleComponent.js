@@ -25,7 +25,8 @@ function ProjectTitleComponent() {
       const file = fileInputRef.files[0];
       // eslint-disable-next-line no-alert
       alert(`"${file.name}" has been uploaded`);
-      window.location.href = '/riskassessment/largelist';
+      window.location.href = '/newproject/overview';
+      // window.location.href = '/riskassessment/largelist';
     }
   };
   return (
@@ -42,7 +43,7 @@ function ProjectTitleComponent() {
             <input ref={(ref) => { fileInputRef = ref; }} onChange={onInputFileChanged} type="file" name="file" />
             <button onClick={onUpload} type="button" className="button btn-download" aria-haspopup="true" aria-controls="dropdown-menu3">
               <i className="fas fa-download" />
-              Last opp filer
+              &nbsp;&nbsp;Last opp filer
             </button>
           </form>
         </div>

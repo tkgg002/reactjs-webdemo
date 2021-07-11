@@ -47,6 +47,7 @@
   color: #4863a3;
   padding: 10px;
   width: 100%;
+  outline: none;
 }
 .popup-modal-new-project .actions button{
   margin: 0px 15px 15px 0px;

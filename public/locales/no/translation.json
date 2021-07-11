@@ -10,10 +10,10 @@
   },
   
   "landingpage": {
-    "newproject": "Nytt prosjekt",    
-    "projectexistence": "Prosjekt eksistens",
+    "newproject": "Nytt prosjekt",
     "recent": "Nylige",
-    "projecttitle": "Prosjekttittel"
+    "projecttitle": "Prosjekttittel",
+    "projectexistence": "Prosjekt eksistens"
   },
   
   "createproject": {

@@ -8,8 +8,9 @@ import './css/App.css';
 import RiskAssessment from './pages/RiskAssessment';
 import GlobalNavigation from './components/GlobalNavigation';
 import ProjectNavigation from './components/ProjectNavigation';
-import Overview from './components/Overview';
+import Login from './pages/Login';
 import Uploading from './components/Uploading';
+import NewProjectPage from './pages/NewProjectPage';
 
 function App() {
   return (
@@ -17,7 +18,9 @@ function App() {
 
       <Router>
         <Switch>
-          <Route exact path="/">
+
+          <Route path="/" exact component={() => <Login />} />
+          <Route exact path="/landing">
             <div className="landingPage">
               <div className="globalNavigationLanding">
                 <GlobalNavigation />
@@ -30,8 +33,7 @@ function App() {
           </Route>
 
           <Route exact path="/newproject">
-            <div className="riskAssessmentPage">
-
+            <div className="newProjectPage">
               <div className="firstRow">
                 <div className="globalNavigationLanding">
                   <GlobalNavigation />
@@ -51,8 +53,8 @@ function App() {
             </div>
           </Route>
 
-          <Route exact path="/newproject">
-            <div className="riskAssessmentPage">
+          <Route exact path="/newproject/overview">
+            <div className="newProjectPage">
 
               <div className="firstRow">
                 <div className="globalNavigationLanding">
@@ -65,8 +67,8 @@ function App() {
                   <ProjectNavigation />
                 </div>
 
-                <div className="riskAssessment">
-                  <Overview />
+                <div className="newproject">
+                  <NewProjectPage />
                 </div>
               </div>
 

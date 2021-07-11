@@ -4,6 +4,7 @@
   align-items: center;
   color:white;
   height: 100vh;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -19,6 +20,14 @@
   flex-direction:column;
   justify-content: flex-start;
   width:100vw;
+}
+
+.newProjectPage {
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-start;
+  width:100vw;
+  flex-wrap: wrap;
 }
 
 .riskAssessmentPage {

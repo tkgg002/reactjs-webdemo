@@ -3,11 +3,13 @@
 }
 
 .column {
-  border-bottom: 0.5px groove;
+  border-bottom: 0.2px groove;
 }
 
+
 .container {
-  margin-top: 150px;
+  margin-left: 550px;
+  margin-top: 170px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,16 +24,16 @@
   justify-items: center;
   color: blue;
   justify-content: center;
-  width: 250px;
-  height: 260px;
-  border: 2px dashed blue;
+  width: 230px;
+  height: 290px;
+  border: 1px dashed blue;
   cursor: pointer;
 }
 
 .button {
   margin-top: 22px;
   color: white;
-  background-color: cornflowerblue;
+  background-color: #272B4A;
 }
 
 .modal {

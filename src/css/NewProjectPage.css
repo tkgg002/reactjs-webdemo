@@ -1,0 +1,50 @@
+.btn-delete {
+    border: 1px solid #272B4A;
+    margin-top: '20px';
+    width: 125px;
+    height: 35px;
+    color: #272B4A;
+    border-radius: 3px;
+    margin-left: 50px;
+    margin-top: 25px;
+    background-color: white ;
+}
+
+.btn-delete:hover {
+    background-color: #272B4A;
+    color: white;
+}
+
+.btn-cancel {
+    border: 1px solid #272B4A;
+    margin-top: '20px';
+    width: 125px;
+    height: 35px;
+    color: #272B4A;
+    border-radius: 3px;
+    margin-left: 960px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #272B4A;
+    color: white;
+}
+
+.btn-create {
+    border: 1px solid #272B4A;
+    margin-top: '20px';
+    width: 125px;
+    height: 35px;
+    color: #272B4A;
+    border-radius: 3px;
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color:white;
+}
+  
+.btn-create:hover {
+    background-color: #272B4A;
+    color: white;
+}

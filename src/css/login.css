@@ -1,0 +1,63 @@
+  .login-page{
+    width: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FBF8F0;
+  }
+
+  .translation {
+    background-color: #FBF8F0;
+    margin-left: 5px;
+  }
+
+  .hero-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .epost {
+    color: #4364A9;
+    border: none;
+    height: 40px;
+    width: 270px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .epost::placeholder {
+    color: #4364A9; 
+  }
+  
+  .title {
+    color: #4364A9;
+    font-weight: 100;
+    /* margin: 0.67em 0; */
+    letter-spacing: 0.32em;
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .subtitle {
+    color: rgb(51, 65, 156);
+    font-size: 18px;
+    font-family: 'Roboto',Arial,sans-serif;
+  }
+  
+  .button {
+    background-color: #4364A9;
+    color: white;
+    width: 140px;
+    height: 38px;
+  }
+
+  .login-form {
+    text-align: center;
+  }

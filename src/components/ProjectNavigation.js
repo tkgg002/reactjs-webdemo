@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from 'react';
+import { useCookies } from 'react-cookie';
 import { useTranslation } from 'react-i18next';
 import '../../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import { Navigation } from 'react-minimal-side-navigation';
@@ -16,8 +17,9 @@ function ProjectNavigation() {
   const { t } = useTranslation();
   const [newProjectOpen, setNewProjectOpen] = useState(false);
   const closeNewProjectOpenModal = () => setNewProjectOpen(false);
-  const subNavData = {
-    projectRecent: [
+  const [cookies] = useCookies(['email']);
+  const subNavDatas = {
+    admin: [
       {
         title: t('landingpage.projecttitle'),
         itemId: '/riskassessment/largelist',
@@ -35,13 +37,21 @@ function ProjectNavigation() {
         itemId: '/placeholder3',
       },
     ],
-    projectRecent1: [
+    other: [
       {
         title: t('landingpage.projecttitle'),
         itemId: '/riskassessment/largelist',
       },
     ],
   };
+  let subNavData = {};
+  if (cookies.email === 'admin') {
+    subNavData = subNavDatas.admin;
+    console.log('admin');
+  } else {
+    subNavData = subNavDatas.other;
+    console.log('other');
+  }
   return (
     <div className="wrapper">
 
@@ -75,7 +85,7 @@ function ProjectNavigation() {
               title: t('landingpage.recent'),
               itemId: '/',
               elemBefore: () => <i className="far fa-clock" />,
-              subNav: subNavData.projectRecent1,
+              subNav: subNavData,
             },
           ]}
         />

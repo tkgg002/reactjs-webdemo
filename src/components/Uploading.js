@@ -7,7 +7,6 @@ import '../css/Uploading.css';
 function Uploading(props) {
   const { location = { search: '?' } } = props || {};
   const { name = '' } = qs.parse(location.search.length ? location.search.substring(1) : '') || {};
-  console.log(location, location.search.length, name);
   let fileInputRef = null;
 
   const onUpload = () => {
@@ -19,7 +18,7 @@ function Uploading(props) {
       const file = fileInputRef.files[0];
       // eslint-disable-next-line no-alert
       alert(`"${file.name}" has been uploaded`);
-      window.location.href = `/riskassessment/largelist?name=${name}`;
+      window.location.href = '/newproject/overview';
     }
   };
 
@@ -30,7 +29,7 @@ function Uploading(props) {
         <div className="upload" onClick={onUpload}>
           <i className="fas fa-download" />
           <br />
-          <span>Stop filer her</span>
+          <span>Slipp filer her</span>
         </div>
         <form encType="multipart/form-data">
           <input ref={(ref) => { fileInputRef = ref; }} onChange={onInputFileChanged} type="file" name="file" />
